@@ -50,23 +50,26 @@
   </div>  
   <div id="content" class="yans">
     <section>
-      <h1 class="t2">Hang Zhao&mdash;
-	<br/>Software Engineer</h1>
+      <h1 class="t2">Hang Zhao</h1>
       <h2 class="t2">About</h2>
-      <p class="t1">I'm currently a master of Electrical Engineering of University of Michigan, Ann Arbor. My focus is on Computer Science.</p>
-      <p class="t1">I spend most of my time on computer software, especially on Web/Internet related development.</p>
-      <p class="t1">Topics that interest me include: Machine Learning, Information Retrieval, Python, Android, Internet Security, Ubuntu and Emacs (unfortunately, I'm an Emacser).</p>
+      <p class="t1">I'm currently a software engineer at Google, where I work in the area of machine learning and image search.</p>
+      <p class="t1">Prior to joining Google, I received my MS degree in <a href="http://www.eecs.umich.edu/">EECS department</a> in <a href="http://www.umich.edu">University of Michigan</a>, focusing on signal processing. I obtained my Bachelor degree from <a href="http://www.tsinghua.edu.cn"/>Tsinghua University, China</a> major in Electrical Engineering.</p>
+      <p class="t1">I spend most of my time on computer software, especially on Web/Internet related development. Topics that interest me include: Machine Learning, Information Retrieval, Internet Security, Linux, Android, Python and Emacs (unfortunately, I'm an Emacser).</p>
       <h2 class="t2">Follow me</h2>
       <p class="t1"><a href="http://www.linkedin.com/profile/view?id=149586671">Linkedin</a><br/>
 	<a href="https://github.com/findboat">Github</a><br/>
-	<a href="https://plus.google.com/u/0/115287566664853441057/posts">Google Plus</a></p>
+	<a href="https://plus.google.com/u/0/115287566664853441057/posts">Google+</a></p>
       <p class="t1">Sometimes, I blog my thoughts or something related <a href="http://sgzhaohang.com/blog">HERE</a>.</p>
       <h2 class="t2">Contact</h2>
-      <p class="t1">email: <a href=mailto:me@sgzhaohang.com>me@sgzhaohang.com</a></p>
+      <p class="t1">email: <a id="mailNode">sgzhaohang at gmail com</a></p>
       <!--<p class="t1">mobile: ?-???-???-????</p>-->
     </section>
   </div>
-  
+
+<script type="text/javascript">function setText(id,t){var el=document.getElementById(id);if(document.all){el.innerText=t;}else{el.textContent=t;}
+return el;}
+function showemail(d,u){var email=u+"@"+d;var el=setText('mailNode',email);el.setAttribute('href','mailto:'+email);}
+showemail('gmail.com','sgzhaohang');</script>
 </body> 
 </html>
 
