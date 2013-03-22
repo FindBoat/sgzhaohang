@@ -44,9 +44,19 @@
     }	
   </style>
 </head>
+
+  <script language="javascript">
+    var d = 0;
+    function e() {
+      d += 0.01;
+      document.body.setAttribute('style', '-webkit-transform:rotate('+Math.sin(d) * 3 + 'deg)');
+    setTimeout(e, 100);
+    };
+  </script>
 <body>
+  <body bgcolor="#f5fffa">
   <div id="bg">  
-    <img src="./src/bg.jpg" alt="">  
+<!--    <img src="./src/bg.jpg" alt="">   -->
   </div>  
   <div id="content" class="yans">
     <section>
@@ -81,6 +91,10 @@
 return el;}
 function showemail(d,u){var email=u+"@"+d;var el=setText('mailNode',email);el.setAttribute('href','mailto:'+email);}
 showemail('gmail.com','sgzhaohang');</script>
-</body> 
+</body>
+  <script language="javascript">
+    e();
+  </script> 
+
 </html>
 
