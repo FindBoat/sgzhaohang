@@ -7,32 +7,40 @@
     <title>Hang Zhao</title>
   <style type="text/css">
     .yans { width: 500px; margin-left: 50px; margin-top: 30px;}
-    .t1 {font-family: Comic Sans MS; color: black;}
-    .t2 {font-family: Comic Sans MS; color: green;}
+    h1 {
+    font-size: 48px;
+    font-weight: bold;
+    padding: 0 0 20px 10px;
+    border-bottom: 1px solid #009BCD;
+    }
+    .t1 {font-family: Helvetica; color: #444444;}
+    .t2 {font-family: Helvetica; color: #444444;}
     .containingbox
 		{
-			width: 985px;
+			width: 850px;
 			height: 700px;
-			border: 1px solid #000;
+			border: 1px solid #444444;
                         margin-left: auto; margin-right: auto;
 		}
 		
     .floatright
     {
     float: right;
-    margin: 130px 20px 10px 10px;
+    margin: 30px 110px 10px 10px;
     }
     
     a:link,
     a:visited     {
-    color:green;
+    color:#009BCD;
     text-decoration:none;
     }
     
     a:hover,
     a:active    {
-    color:#97B61B;
+    color:#009BCD;
     text-decoration:none;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
     }
     #bg {  
     position:fixed;   
@@ -55,51 +63,67 @@
     #content {
     position:relative;
     z-index:1;
-    }	
+    }
+
+    .sociallink {
+    }
+
+    .sociallink:hover {
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    }
+
+    .sociallink:active {
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    }
+
+    .avatar{-webkit-border-radius:50%;border-radius:50%;border:1px #bbb solid;background-color:rgba(0,0,0,0.1);overflow:hidden}
+
   </style>
 </head>
 
-  <script language="javascript">
-    var d = 0;
-    function e() {
-      d += 0.01;
-      document.body.setAttribute('style', '-webkit-transform:rotate('+Math.sin(d) * 3 + 'deg)');
-    setTimeout(e, 100);
-    };
-  </script>
+<!--   <script language="javascript"> -->
+<!--     var d = 0; -->
+<!--     function e() { -->
+<!--       d += 0.01; -->
+<!--       document.body.setAttribute('style', '-webkit-transform:rotate('+Math.sin(d) * 3 + 'deg)'); -->
+<!--     setTimeout(e, 100); -->
+<!--     }; -->
+<!--   </script> -->
 <body>
-  <body bgcolor="#FFFFFF">
+  <body bgcolor="#f9fcff">
 <!--  <div id="bg"> 
     <img src="./src/bg.jpg" alt=""> 
   </div>   -->
 <div class="containingbox">
-<div class="floatright">
-  <img src="./src/profile.jpg" width="400" height="290">
-  </div>
+<div class="floatright avatar">
+<!--    <img src="./src/profile2.png" > -->
+    <img src="./src/profile.png" width="190" height="190">
+</div>
 
   <div id="content" class="yans">
     <section>
       <h1 class="t2">Hang Zhao</h1>
       <h2 class="t2">About</h2>
       <p class="t1">I'm currently a software engineer at Google, Mountain View, where I work in the area of information retrieval and distributed system.</p>
-      <p class="t1">Prior to joining Google, I received my MS degree in <a href="http://www.eecs.umich.edu/">EECS department</a> in <a href="http://www.umich.edu">University of Michigan</a>, focusing on signal processing. I obtained my Bachelor degree from <a href="http://www.tsinghua.edu.cn"/>Tsinghua University, China</a> major in Electrical Engineering.</p>
-      <p class="t1">I spend most of my time on computer software, especially on Web/Mobile related development. Topics that interest me include: Machine Learning, Information Retrieval, Internet Security, Mobile, Python and Emacs (unfortunately, I'm an Emacser).</p>
+      <p class="t1">Prior to joining Google, I received my MS degree in EECS department in University of Michigan, focusing on signal processing. I obtained my Bachelor degree from Tsinghua University, China major in Electrical Engineering.</p>
+      <p class="t1">I spend most of my time on Web/Mobile related development. Topics that interest me include: Machine Learning, Information Retrieval, Internet Security, Python and Emacs (unfortunately, I'm an Emacser).</p>
       <h2 class="t2">Follow me</h2>
       <!-- Place this code where you want the badge to render. -->
-<a href="http://plus.google.com/115287566664853441057" rel="me" title="Google+">
-<img src="./src/gplus.png" alt="Google+" style="border:0;width:45px;height:45px;"/></a>
-
-<a href="https://github.com/findboat" rel="me" title="Github">
+<a class="sociallink" href="https://github.com/findboat" rel="me" title="Github">
 <img src="./src/github.png" alt="Github" style="border:0;width:40px;height:40px;"/></a>
 
-<a href="http://www.linkedin.com/profile/view?id=149586671" rel="me" title="Linkedin">
+<a class="sociallink" href="http://plus.google.com/115287566664853441057" rel="me" title="Google+">
+<img src="./src/gplus.png" alt="Google+" style="border:0;width:40px;height:40px;"/></a>
+
+<a class="sociallink" href="http://www.linkedin.com/profile/view?id=149586671" rel="me" title="Linkedin">
 <img src="./src/linkedin.png" alt="Linkedin" style="border:0;width:40px;height:40px;"/></a>
 
-<a href="https://www.facebook.com/hang.zhao.9" rel="me" title="Facebook">
+<a class="sociallink" href="https://www.facebook.com/hang.zhao.9" rel="me" title="Facebook">
 <img src="./src/facebook.png" alt="Facebook" style="border:0;width:40px;height:40px;"/></a>
 
       <p class="t1">Sometimes, I blog my thoughts or something related <a href="http://sgzhaohang.com/blog">HERE</a>.</p>
-      <p class="t1">My resume is attached here <a href="http://sgzhaohang.com/src/Resume.pdf">HERE</a>.</p>
       <h2 class="t2">Contact</h2>
       <p class="t1">email: <a id="mailNode">sgzhaohang at gmail com</a></p>
       <!--<p class="t1">mobile: ?-???-???-????</p>-->
@@ -112,9 +136,9 @@ return el;}
 function showemail(d,u){var email=u+"@"+d;var el=setText('mailNode',email);el.setAttribute('href','mailto:'+email);}
 showemail('gmail.com','sgzhaohang');</script>
 </body>
-  <script language="javascript">
-    e();
-  </script> 
+<!--   <script language="javascript"> -->
+<!--     e(); -->
+<!--   </script>  -->
 
 </html>
 
